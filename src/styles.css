@@ -6,7 +6,13 @@ body {
 }
 
 hr {
-    border-color: white;
+    background-color: transparent;
+    background-image: linear-gradient(to right, transparent , rgb(255, 0, 0), transparent);
+    border: 0;
+    height: .1rem !important;
+    max-width: 100%;
+    opacity: 1;
+   
 }
 
 .puntero {
@@ -79,7 +85,7 @@ hr {
 .content{
     justify-content: center;
     margin: auto;
-    max-width: 49rem;
+    max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
@@ -109,7 +115,7 @@ hr {
     background: #303952;
     height: 50vh;
     left: 0;
-    opacity: .50;
+    opacity: .40;
     position: absolute;
     top: 0;
     width: 100vw;
@@ -117,20 +123,21 @@ hr {
 }
 .header-text{
     z-index: 2;
+    width: 100%;
 }
 
 .header-text h1{
-    font-size: 50px;
-    margin-bottom: 0;
     color: rgb(240, 240, 240);
+    font-size: 50px;
     font-family: 'Share Tech', sans-serif;
+    margin-bottom: 0;
 }
 
 .header-text p{
+    color: rgb(240, 240, 240);
     font-size: 25px;
-    margin-bottom: 0;
-    color: #e0f054;
     font-family: 'Share Tech', sans-serif;
+    margin-bottom: 0;
 }
 
 @media(max-width: 960px){
@@ -141,8 +148,50 @@ hr {
 
 /* Menu */
 
+.navbar-header{
+    margin-right: 10px;
+    margin-left: -5px;
+}
+
 .menu{ height:80px; width:100%}
 .fixed{position:fixed; top:0}
+
+#nameMenu{
+    font-size: 1.3rem;
+}
+.half-size {
+    font-size: 0.9rem;
+}
+
+@media(max-width: 460px){
+    .half-size{
+        display: none;
+    }
+}
+
+
+@media (max-width: 460px){
+    #nameMenu{
+        font-size: 1rem;
+    }
+}
+
+.brand.text{
+    font-family: 'Share Tech', sans-serif;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 50px;
+}
+
+img {
+    vertical-align: middle;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
 
 .section {
     padding-top: 5rem;

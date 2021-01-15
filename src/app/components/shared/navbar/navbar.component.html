@@ -1,9 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #2A2626">
 <!-- Navbar content -->
-<div class="container-fluid d-flex justify-content-end">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="container-fluid d-flex">
+    <a class="navbar-brand brand-text" (window:scroll)="changeScrollFade" href="/">
+      <span>
+        <img class="img-circle" src="./assets/leon-azul.jpeg">
+        <span class="animated fadeIn fast" *ngIf="changeFade" id="nameMenu">
+          Alan Yael Mejía Campuzano
+          <span class="animated fadeIn fast" class="half-size">
+            Developer
+          </span>
+        </span>
+      </span>
+    </a>
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="d-flex justify-content-center">
         <ul class="navbar-nav me-3">
@@ -27,5 +40,3 @@
     </div>
   </div>
 </nav>
-
-
