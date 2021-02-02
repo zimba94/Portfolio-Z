@@ -1,0 +1,7 @@
+<div class="swiper-container swiper-skills">
+    <div class="swiper-wrapper">
+        <div *ngFor="let skill of skills" class="swiper-slide text-white text-center">
+            <img [src]="skill.image_path" alt="skill.name" class="img-thumbnail"> {{skill.name}}
+        </div>
+    </div>
+</div>

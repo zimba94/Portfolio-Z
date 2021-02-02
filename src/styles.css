@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
-    background-color: rgb(255, 255, 255);;
-    color:  #2A2626 !important;
+html, body {
+    background-color: aliceblue;
+    color:  #1d1b1b !important;
 }
 
+h1 {
+    text-align: center;
+}
+h3{
+    font-size: 22px !important;
+    color: rgb(17, 17, 17);
+    padding-top: 1rem;
+    text-align: center;
+}
 hr {
     background-color: transparent;
     background-image: linear-gradient(to right, transparent , rgb(255, 0, 0), transparent);
@@ -118,7 +127,7 @@ hr {
     opacity: .40;
     position: absolute;
     top: 0;
-    width: 100vw;
+    width: 98.9vw;
     z-index: 1;
 }
 .header-text{
@@ -127,14 +136,14 @@ hr {
 }
 
 .header-text h1{
-    color: rgb(240, 240, 240);
+    color: aliceblue;
     font-size: 50px;
     font-family: 'Share Tech', sans-serif;
     margin-bottom: 0;
 }
 
 .header-text p{
-    color: rgb(240, 240, 240);
+    color: aliceblue;
     font-size: 25px;
     font-family: 'Share Tech', sans-serif;
     margin-bottom: 0;
@@ -147,6 +156,10 @@ hr {
 }
 
 /* Menu */
+
+nav {
+    margin-top: -1px;
+}
 
 .navbar-header{
     margin-right: 10px;
@@ -192,6 +205,10 @@ img {
     border-color: initial;
     border-image: initial;
 }
+
+
+	
+.imagen:hover {filter: opacity(.8);}
 
 .section {
     padding-top: 5rem;

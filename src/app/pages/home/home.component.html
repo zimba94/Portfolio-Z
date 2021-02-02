@@ -1,0 +1,67 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="container">
+
+    <section id="portfolio" class="section">
+        <div class="container-fluid">
+            
+            <br>
+            <h1>Portfolio</h1>
+            <hr>
+            <br>
+            <app-projects-poster-grid *ngIf="projects.length > 0" [projects]="projects"></app-projects-poster-grid>
+    
+        </div>
+    
+    </section>
+    
+    <section id="skillset" class="section">
+        <div class="container-fluid">
+            <br>
+            <h1>Skill Set</h1>
+            <br>
+            <div *ngFor="let item of [1,1,1,1,1]">
+                <hr>
+                <h2>Titulo</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section id="experience" class="section">
+        <div class="container-fluid">
+            
+            <br>
+            <h1>Experience</h1>
+            <br>
+            <div *ngFor="let item of [1,1,1,1,1]">
+                <hr>
+                <h2>Titulo</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
+            </div>
+            
+        </div>
+    
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container-fluid">
+            
+            <br>
+            <h1>Contact</h1>
+            <br>
+            <div *ngFor="let item of [1,1,1,1,1]">
+                <hr>
+                <h2>Titulo</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
+            </div>
+            
+        </div>
+    
+    </section>
+    
+</div>

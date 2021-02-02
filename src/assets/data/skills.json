@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image_path":"./assets/img/skills/javascript.png", 
+        "name":"JavaScript"
+    },
+    {
+        "id": 2,
+        "image_path":"./assets/img/skills/angular.png", 
+        "name":"Angular"
+    },
+    {
+        "id": 3,
+        "image_path":"./assets/img/skills/node.png", 
+        "name":"Node"
+    },
+    {
+        "id": 4,
+        "image_path":"./assets/img/skills/flutter.png", 
+        "name":"Flutter"
+    },
+    {
+        "id": 5,
+        "image_path":"./assets/img/skills/php.png", 
+        "name":"PHP"
+    },
+    {
+        "id": 6,
+        "image_path":"./assets/img/skills/react.png", 
+        "name":"React"
+    }
+]

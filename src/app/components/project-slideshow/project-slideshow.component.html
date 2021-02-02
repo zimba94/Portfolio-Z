@@ -1,0 +1,20 @@
+<!-- Slider main container -->
+<div class="swiper-container swiper-project">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" *ngFor="let image of projectImages" [ngStyle]="{'background-size': 'cover', 'background-image': 'url('+ image +')'}">
+            <!-- <div class="project-description">
+                <h3>{{project.name}}</h3>
+                <p>{{project.description}}</p>
+            </div> -->
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div (click)="onSlidePrev()" class="swiper-button-prev"></div>
+    <div (click)="onSlideNext()" class="swiper-button-next"></div>
+
+</div>

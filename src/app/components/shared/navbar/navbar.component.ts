@@ -1,4 +1,6 @@
+import { ElementRef } from '@angular/core';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   changeFade = false;
 
-  constructor() { }
+  constructor(private elemento: ElementRef) { }
 
   ngOnInit(): void {
   }
@@ -24,6 +26,12 @@ export class NavbarComponent implements OnInit {
     }else{
       this.changeFade = false;
     }
+  }
+
+  // tslint:disable-next-line:typedef
+  changeShowNavbar(){
+    const myTag = this.elemento.nativeElement.querySelector('#navbarSupportedContent');
+    myTag.classList.remove('show');
   }
 
 }

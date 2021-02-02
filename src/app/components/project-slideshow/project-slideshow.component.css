@@ -1,0 +1,19 @@
+.swiper-container {
+    height: 530px;
+    width: 90%;
+    padding-top: 0px;
+    border-radius: 2rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #0DCAF0;
+}
+
+.project-description {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    padding: 5px 30px;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "image_path":"./assets/img/projects/sota.png", 
+        "name":"Sistema de Orientación de Trayectoria Académica", 
+        "description":"Desarrollado con CodeIgniter",
+        "skills": [1,3,4,2,5],
+        "redirecto":"http://portfolio/sota"
+    },
+    {
+        "id": 2,
+        "image_path":"./assets/img/projects/amasom.png", 
+        "name":"Constructora AMASOM", 
+        "description":"Página de presentación con Wordpress",
+        "skills": [1,3,4],
+        "redirecto":"http://portfolio/amasom"
+    },
+    {
+        "id": 3,
+        "image_path":"./assets/img/projects/gulaeats.png", 
+        "name":"GulaEats", 
+        "description":"Aplicación de servicio de delivery con Flutter",
+        "skills": [1,3,4],
+        "redirecto":"http://portfolio/gulaeats"
+    },
+    {
+        "id": 4,
+        "image_path":"./assets/img/projects/gulaeats.png", 
+        "name":"GulaEats", 
+        "description":"Aplicación de servicio de delivery con Flutter",
+        "skills": [1,3,4],
+        "redirecto":"http://portfolio/gulaeats"
+    }
+]
