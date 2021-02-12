@@ -3,6 +3,7 @@
 html, body {
     background-color: aliceblue;
     color:  #1d1b1b !important;
+    position: relative;
 }
 
 h1 {
@@ -212,5 +213,5 @@ img {
 
 .section {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }

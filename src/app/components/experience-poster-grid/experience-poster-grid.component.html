@@ -1,0 +1,101 @@
+<div class="row justify-content-center">
+    <div class="col-md-3 col-sm-6 mb-5 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/fi.jpg" (click)="openWindowCustomClass(fi)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Facultad de Ingeniería-UAEMex</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-5 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/apous-digital.png" (click)="openWindowCustomClass(apous)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Apous Digital</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/leon.jpg" (click)="openWindowCustomClass(freelance)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Freelance</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<ng-template #fi let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Laboratorio de Software de la FI UAEMex</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>Dec/2017 - Dec/2019 </strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            Desarrollo de aplicaciones web con CodeIgniter
+        </div>    
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+<ng-template #apous let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Apous Digital</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>Aug/2020 - Feb/2021 </strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            Emprendimiento de una agencia digital. Creando páginas web en Wordpress.
+        </div>    
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">close</button>
+    </div>
+</ng-template>
+
+<ng-template #freelance let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Freelance</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>Oct/2020 - Present</strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            Desarrollo web y móvil. Destacando Laravel y Flutter
+        </div>   
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+
+
+

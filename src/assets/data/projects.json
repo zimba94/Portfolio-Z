@@ -25,9 +25,9 @@
     },
     {
         "id": 4,
-        "image_path":"./assets/img/projects/gulaeats.png", 
-        "name":"GulaEats", 
-        "description":"Aplicación de servicio de delivery con Flutter",
+        "image_path":"./assets/img/projects/dextro.png", 
+        "name":"Grupo Dextro", 
+        "description":"Página ejecutiva para Grupo Dextro",
         "skills": [1,3,4],
         "redirecto":"http://portfolio/gulaeats"
     }

@@ -20,9 +20,9 @@ export class SkillsSlideshowComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(){
     this.mySwiper = new Swiper('.swiper-skills', {
-      slidesPerView: 3.2,
+      slidesPerView: 3.3,
       freeMode: true,
-      spaceBetween: 10,
+      spaceBetween: 15,
     });
   }
 

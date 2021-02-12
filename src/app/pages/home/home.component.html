@@ -19,13 +19,9 @@
         <div class="container-fluid">
             <br>
             <h1>Skill Set</h1>
+            <hr>
             <br>
-            <div *ngFor="let item of [1,1,1,1,1]">
-                <hr>
-                <h2>Titulo</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
-            </div>
+            <app-skills-poster-grid *ngIf="skills.length > 0" [skills]="skills"></app-skills-poster-grid>
         </div>
     
     </section>
@@ -35,13 +31,9 @@
             
             <br>
             <h1>Experience</h1>
+            <hr>
             <br>
-            <div *ngFor="let item of [1,1,1,1,1]">
-                <hr>
-                <h2>Titulo</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
-            </div>
+            <app-experience-poster-grid></app-experience-poster-grid>
             
         </div>
     
@@ -52,13 +44,9 @@
             
             <br>
             <h1>Contact</h1>
+            <hr>
             <br>
-            <div *ngFor="let item of [1,1,1,1,1]">
-                <hr>
-                <h2>Titulo</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vitae quibusdam repellendus iusto ratione fugiat amet accusamus distinctio officia ad sapiente, rerum culpa. Earum alias eum omnis laborum ut!</p>
-            </div>
+            <app-contact></app-contact>
             
         </div>
     
