@@ -11,5 +11,6 @@ export interface Project{
 export interface Skill{
   id: number,
   image_path: string,
-  name: string
+  name: string,
+  level: string
 }

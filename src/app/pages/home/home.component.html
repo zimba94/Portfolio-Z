@@ -1,55 +1,70 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
-<div class="container">
+<div
+  class="container-fluid mb-3"
+  style="width: 100%; margin: 0px !important; padding: 0%"
+>
+  <section id="portfolio" class="section">
+    <div class="container">
+      <br />
+      <h1>Portfolio</h1>
+      <hr />
+      <br />
+      <app-projects-poster-grid
+        *ngIf="projects.length > 0"
+        [projects]="projects"
+      ></app-projects-poster-grid>
+    </div>
+  </section>
 
-    <section id="portfolio" class="section">
-        <div class="container-fluid">
-            
-            <br>
-            <h1>Portfolio</h1>
-            <hr>
-            <br>
-            <app-projects-poster-grid *ngIf="projects.length > 0" [projects]="projects"></app-projects-poster-grid>
-    
-        </div>
-    
-    </section>
-    
-    <section id="skillset" class="section">
-        <div class="container-fluid">
-            <br>
-            <h1>Skill Set</h1>
-            <hr>
-            <br>
-            <app-skills-poster-grid *ngIf="skills.length > 0" [skills]="skills"></app-skills-poster-grid>
-        </div>
-    
-    </section>
-    
-    <section id="experience" class="section">
-        <div class="container-fluid">
-            
-            <br>
-            <h1>Experience</h1>
-            <hr>
-            <br>
-            <app-experience-poster-grid></app-experience-poster-grid>
-            
-        </div>
-    
-    </section>
-    
-    <section id="contact" class="section">
-        <div class="container-fluid">
-            
-            <br>
-            <h1>Contact</h1>
-            <hr>
-            <br>
-            <app-contact></app-contact>
-            
-        </div>
-    
-    </section>
-    
+  <section id="skillset" class="section" style="background-color: #292b2c">
+    <div class="container">
+      <br />
+      <h1 class="text-white">Skill Set</h1>
+      <hr />
+      <br />
+      <app-skills-poster-grid
+        *ngIf="skills.length > 0"
+        [skills]="skills"
+      ></app-skills-poster-grid>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <br />
+      <h1>Experience</h1>
+      <hr />
+      <br />
+      <app-experience-poster-grid></app-experience-poster-grid>
+    </div>
+  </section>
+
+  <section
+    id="contact"
+    class="section"
+    style="background-color: #292b2c; padding-bottom: 20px"
+  >
+    <div class="container">
+      <br />
+      <h1 class="text-white">Contact</h1>
+      <hr />
+      <br />
+      <app-contact></app-contact>
+    </div>
+
+    <div class="container d-flex justify-content-center mb-4">
+      <a href="https://www.linkedin.com/in/alan-mejia-ing-sw/" target="_blank">
+        <i class="fa fa-linkedin fa-2x social-media" aria-hidden="true"></i>
+      </a>&nbsp;
+      <a href="https://github.com/zimba94" target="_blank">
+        <i class="fa fa-github fa-2x social-media" aria-hidden="true"></i>
+      </a>&nbsp;
+      <a href="https://api.whatsapp.com/send?phone=5217228036860&text=Hola%20Alan" target="_blank">
+        <i class="fa fa-whatsapp fa-2x social-media" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </section>
 </div>
+<app-footer></app-footer>

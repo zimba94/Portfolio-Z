@@ -2,31 +2,37 @@
     {
         "id": 1,
         "image_path":"./assets/img/skills/javascript.png", 
-        "name":"JavaScript"
+        "name":"JavaScript",
+        "level": "Advanced"
     },
     {
         "id": 2,
         "image_path":"./assets/img/skills/angular.png", 
-        "name":"Angular"
+        "name":"Angular",
+        "level": "Intermediate"
     },
     {
         "id": 3,
         "image_path":"./assets/img/skills/node.png", 
-        "name":"Node"
+        "name":"Node",
+        "level": "Basic"
     },
     {
         "id": 4,
         "image_path":"./assets/img/skills/flutter.png", 
-        "name":"Flutter"
+        "name":"Flutter",
+        "level": "Intermediate"
     },
     {
         "id": 5,
         "image_path":"./assets/img/skills/php.png", 
-        "name":"PHP"
+        "name":"PHP",
+        "level": "Intermediate"
     },
     {
         "id": 6,
         "image_path":"./assets/img/skills/react.png", 
-        "name":"React"
+        "name":"React",
+        "level": "Basic"
     }
 ]

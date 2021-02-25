@@ -1,0 +1,140 @@
+.form {
+  width: 840px;
+  height: 420px;
+  background: #292b2c;
+  border-radius: 8px;
+  padding: 0px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  position: relative;
+  margin: 0 auto;
+}
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+
+input {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+  transition: all 0.3s;
+  color: aliceblue !important;
+}
+
+textarea::placeholder, input::placeholder { color: rgb(192, 192, 192); }
+
+textarea:focus, input:focus {
+  color: rgb(36, 36, 36) !important;
+}
+/* input:focus {
+  border-bottom: linear-gradient(to right, transparent , rgb(255, 0, 0), transparent);
+} */
+p:before {
+  content: attr(type);
+  display: block;
+  font-size: 14px;
+  color: #5a5a5a;
+  margin-bottom: 0px !important;
+}
+
+hr{
+    margin: 0px;
+    margin-bottom: 35px !important;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid aliceblue;
+  background: 0;
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: aliceblue;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
+}
+
+textarea{
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  height: auto;
+  color: aliceblue !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.form-btn{
+  
+}
+
+
+
+@media (min-width: 280px) {
+    .form-btn-sm {
+        width: 60% !important;
+        padding: 10px !important;
+        margin-right: 52px !important;
+
+    }
+}
+@media (min-width: 540px) {
+    .form-btn-md {
+        width: 60% !important;
+        padding: 10px !important;
+        margin-right: 85px !important;
+    }
+}
+@media (min-width: 768px) {
+    .form-btn-lg {
+      float: right !important;
+      padding: 8px 12px !important;
+      margin: 8px 0 0 !important;
+      width: 18% !important;
+    }
+}

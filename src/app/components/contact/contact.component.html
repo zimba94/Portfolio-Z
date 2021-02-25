@@ -1,1 +1,17 @@
-<p>contact works!</p>
+<form class="form" style="width: auto !important;" [formGroup]="form" (ngSubmit)="guardar()">
+    
+    <input type="text" class="form-control" formControlName="name" placeholder="Name" [class.is-invalid]="nameNotValid">
+    <small *ngIf="nameNotValid" class="text-danger">Please enter a name</small>
+    <hr>
+    <input type="email" class="form-control" formControlName="email" placeholder="Email" [class.is-invalid]="emailNotValid">
+    <small *ngIf="emailNotValid" class="text-danger">Please enter a valid email </small>
+    <hr>
+    <textarea formControlName="message" class="form-control" placeholder="Message" [class.is-invalid]="messageNotValid"></textarea>
+    <small *ngIf="messageNotValid" class="text-danger">Leave a message</small>
+    <hr>
+    <input type="number" class="form-control" formControlName="result" placeholder="15 + 85 =" [class.is-invalid]="resultNotValid">
+    <small *ngIf="resultNotValid" class="text-danger">The answer is wrong xp</small>
+    <hr>
+    <button type="submit" class="text-center mb-5 form-btn-sm form-btn-md form-btn-lg">Send Message</button>
+</form>
+

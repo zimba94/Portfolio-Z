@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PipesModule } from '../pipes/pipes.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { HeaderComponent } from './shared/header/header.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -11,7 +12,7 @@ import { SkillsSlideshowComponent } from './skills-slideshow/skills-slideshow.co
 import { SkillsPosterGridComponent } from './skills-poster-grid/skills-poster-grid.component';
 import { ExperiencePosterGridComponent } from './experience-poster-grid/experience-poster-grid.component';
 import { ContactComponent } from './contact/contact.component';
-import { ExperienceModalComponent } from './experience-modal/experience-modal.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -23,12 +24,15 @@ import { ExperienceModalComponent } from './experience-modal/experience-modal.co
     SkillsSlideshowComponent, 
     SkillsPosterGridComponent, 
     ExperiencePosterGridComponent, 
-    ContactComponent, ExperienceModalComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    PipesModule
+    PipesModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     HeaderComponent,
@@ -38,7 +42,8 @@ import { ExperienceModalComponent } from './experience-modal/experience-modal.co
     SkillsSlideshowComponent,
     SkillsPosterGridComponent,
     ExperiencePosterGridComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
