@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ValidatorsService } from '../../services/validators.service';
+import { MailService } from '../../services/mail.service';
+import { Email } from '../../interfaces/interfaces';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -11,8 +14,9 @@ import { ValidatorsService } from '../../services/validators.service';
 export class ContactComponent implements OnInit {
 
   form: FormGroup;
+  sent = false;
 
-  constructor(private formBuilder: FormBuilder, private validators: ValidatorsService) { 
+  constructor(private formBuilder: FormBuilder, private validators: ValidatorsService, private email: MailService, private snackBar: MatSnackBar) { 
     this.createForm();
   }
 
@@ -36,9 +40,16 @@ export class ContactComponent implements OnInit {
       return;
     }
 
+    const emailValues: Email = this.form.value;
     //ToDo: Post email, Service
+    this.email.sendEmail(emailValues).subscribe(result => {
+      this.snackBar.open('Message has been sent', undefined, {
+        duration: 2000,
+      });
+      this.form.reset();
+    });
 
-    this.form.reset();
+    
   }
 
   get nameNotValid(){

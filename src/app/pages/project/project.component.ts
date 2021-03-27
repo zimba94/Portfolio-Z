@@ -22,7 +22,7 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
 
     
-    const {id} = this.activatedRoute.snapshot.params;
+    const {name} = this.activatedRoute.snapshot.params;
     
     
     combineLatest([
@@ -34,7 +34,7 @@ export class ProjectComponent implements OnInit {
         this.router.navigateByUrl('/home');
         return;
       }
-      this.project = projects.filter(project => project.id.toString() === id)[0];
+      this.project = projects.filter(project => project.name.toString() === name)[0];
 
       this.project.skills.forEach(skillId => {
         this.skillSet.push(skills.filter(skill => skill.image_path != null && skill.id === skillId)[0]);

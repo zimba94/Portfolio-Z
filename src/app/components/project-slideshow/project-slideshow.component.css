@@ -1,63 +1,27 @@
-/* .swiper-container {
-    height: 530px;
-    width: 90%;
-    padding-top: 0px;
-    border-radius: 2rem;
+  img {
+    border-radius: 20px !important;
+  }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none !important;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: #0DCAF0;
+.carousel-control-next-icon:after
+{
+  content: '>' !important;
+  font-size: 55px !important;
+  color: red !important;
 }
 
-.project-description {
-    background-color: rgba(0, 0, 0, 0.3);
-    bottom: 0;
-    padding: 5px 30px;
-    position: absolute;
-    width: 100%;
-} */
-
-.swiper-container {
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin-top: 15px;
-    padding-top: 0px;
-    border-radius: 2rem;
-  }
-
-  .swiper-slide {
-    background-size: cover;
-    background-position: center;
-  }
-
-  .gallery-top {
-    height: 430px;
-    width: 96%;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .gallery-thumbs {
-    height: 20%;
-    width: 96%;
-    box-sizing: border-box;
-    padding: 10px 0;
-    margin-bottom: 80px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .gallery-thumbs .swiper-slide {
-    height: 100%;
-    opacity: 0.4;
-  }
-
-  .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: #0DCAF0;
-  }
+.carousel-control-prev-icon:after {
+  content: '<' !important;
+  font-size: 55px !important;
+  color: red !important;
+}

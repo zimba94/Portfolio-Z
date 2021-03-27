@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { delay } from 'rxjs/operators';
 import { Project, Skill } from '../interfaces/interfaces';
 
 @Injectable({
@@ -11,12 +10,10 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getProjects(){
-    return this.http.get<Project[]>('/assets/data/projects.json')
-                .pipe(delay(200));
+    return this.http.get<Project[]>('/assets/data/projects.json');
   }
 
   getSkills(){
-    return this.http.get<Skill[]>('/assets/data/skills.json')
-                .pipe(delay(200));
+    return this.http.get<Skill[]>('/assets/data/skills.json');
   }
 }

@@ -18,6 +18,6 @@ export class ProjectsPosterGridComponent implements OnInit {
   
   // tslint:disable-next-line:typedef
   onProjectClick(project: Project){
-    this.router.navigate(['/project', project.id ]);
+    this.router.navigate(['/project', project.name ]);
   }
 }

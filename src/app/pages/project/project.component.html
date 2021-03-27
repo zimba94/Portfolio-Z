@@ -2,11 +2,11 @@
     <div class="row animated fadeIn fast" style="margin-right: auto !important; background-color:  #14161E;" *ngIf="project">
         <div class="col-md-6 mt-3">
             <!-- Imágen -->
-            <!-- <img [src]="project.image_path" [alt]="project.name" class="img-thumbnail"> -->
             <app-project-slideshow [project]="project"></app-project-slideshow>
+            <!-- <app-project-slideshow2 [project]="project"></app-project-slideshow2> -->
     
         </div>
-        <div class="col md-6 text-white mt-3">
+        <div class="col-md-6 text-white mt-3">
             <h3 class="text-white">{{project.name}}</h3>
             <!-- Detalles -->
     
@@ -14,19 +14,22 @@
             <div class="row mt-5">
                 <div class="col text-white ms-3">
                     {{project.description}}
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, esse dignissimos unde, accusantium earum, voluptatem quae iusto nostrum et molestiae rerum voluptates iure? Voluptas consectetur, voluptate quam hic cumque ratione.
                 </div>
+                
             </div>
 
-            <div class="row mt-5 " style="margin-right: auto !important;" *ngIf="skillSet.length > 0">
-                <div class="col styke text-white" style=" width: 150px !important;">
+            <div class="row mt-5" *ngIf="skillSet.length > 0">
+                <div class="col text-white">
+                    <p class="text-white ms-3 mb-3">Developed with:</p>
                     <app-skills-slideshow [skills]="skillSet"></app-skills-slideshow>
                 </div>
-            </div>
-            
+            </div>            
     
-            <div class="row mt-5"  style="margin-right: 10px !important;">
-                <div class=" d-flex justify-content-end mb-5">
+            <div class="row mt-5 mb-5"  style="margin-right: 10px !important;">
+                <div class="d-flex justify-content-end mb-5">
+                    <a *ngIf="project.link != ''" class="btn btn-outline-success me-3" target="_blank" [href]="project.link">
+                        View
+                    </a>
                     <button class="btn btn-outline-info" (click)="onRegresar()">
                         Return
                     </button>
@@ -34,9 +37,4 @@
             </div>
         </div>
     </div>
-
-
-    
-
 </div>
-

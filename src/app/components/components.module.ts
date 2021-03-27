@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PipesModule } from '../pipes/pipes.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './shared/header/header.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -13,6 +14,7 @@ import { SkillsPosterGridComponent } from './skills-poster-grid/skills-poster-gr
 import { ExperiencePosterGridComponent } from './experience-poster-grid/experience-poster-grid.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProjectSlideshow2Component } from './project-slideshow2/project-slideshow2.component';
 
 
 @NgModule({
@@ -25,20 +27,23 @@ import { FooterComponent } from './shared/footer/footer.component';
     SkillsPosterGridComponent, 
     ExperiencePosterGridComponent, 
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectSlideshow2Component
   ],
   imports: [
     CommonModule,
     RouterModule,
     PipesModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   exports: [
     HeaderComponent,
     NavbarComponent,
     ProjectsPosterGridComponent,
     ProjectSlideshowComponent,
+    ProjectSlideshow2Component,
     SkillsSlideshowComponent,
     SkillsPosterGridComponent,
     ExperiencePosterGridComponent,

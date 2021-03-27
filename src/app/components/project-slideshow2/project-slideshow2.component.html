@@ -1,0 +1,8 @@
+<div class="swiper-container swiper-project" *ngIf="projectImages">
+    <div class="swiper-wrapper">
+        <div *ngFor="let image of projectImages" class="swiper-slide text-white text-center">
+            <img [src]="image" alt="skill.name" class="img-fluid">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>

@@ -1,21 +1,9 @@
-<!-- Slider main container -->
-<div class="swiper-container gallery-top">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" *ngFor="let image of projectImages" [ngStyle]="{'background-size': 'cover', 'background-image': 'url('+ image +')'}">
-        </div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div (click)="onSlidePrev()" class="swiper-button-prev"></div>
-    <div (click)="onSlideNext()" class="swiper-button-next"></div>
-</div>
-<div class="swiper-container gallery-thumbs">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" (click)="onSlide(i)" *ngFor="let image of projectImages; let i = index;" [ngStyle]="{'background-image': 'url('+ image +')'}">
-        </div>
-    </div>
+<div class="mt-4 ms-3">
+    <ngb-carousel *ngIf="projectImages">
+        <ng-template ngbSlide *ngFor="let image of projectImages">
+          <div class="picsum-img-wrapper poster d-flex justify-content-center">
+            <img class="img-fluid" [src]="image" alt="Random first slide">
+          </div>
+        </ng-template>
+    </ngb-carousel>
 </div>
