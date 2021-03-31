@@ -190,9 +190,9 @@ nav {
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 370px){
     #nameMenu{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
