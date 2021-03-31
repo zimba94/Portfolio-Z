@@ -43,10 +43,4 @@ export class ProjectComponent implements OnInit {
     
   }
 
-  onRegresar(){
-
-    this.router.navigate(['/'], { fragment: 'portfolio' });
-
-  }
-
 }

@@ -1,6 +1,5 @@
 import { ElementRef } from '@angular/core';
 import { Component, HostListener, OnInit } from '@angular/core';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-navbar',

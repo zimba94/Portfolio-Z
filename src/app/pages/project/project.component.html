@@ -30,9 +30,7 @@
                     <a *ngIf="project.link != ''" class="btn btn-outline-success me-3" target="_blank" [href]="project.link">
                         View
                     </a>
-                    <button class="btn btn-outline-info" (click)="onRegresar()">
-                        Return
-                    </button>
+                    <a class="btn btn-outline-info" aria-current="page" [routerLink]="['/']" fragment="portfolio">Return</a>
                 </div>
             </div>
         </div>

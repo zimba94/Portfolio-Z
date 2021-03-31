@@ -22,7 +22,7 @@ hr {
     height: .1rem !important;
     max-width: 100%;
     opacity: 1;
-   
+
 }
 
 .puntero {
@@ -190,6 +190,12 @@ nav {
     }
 }
 
+@media (max-width: 360px){
+    #nameMenu{
+        font-size: 0.9rem;
+    }
+}
+
 .brand.text{
     font-family: 'Share Tech', sans-serif;
 }
@@ -208,7 +214,7 @@ img {
 }
 
 
-	
+
 .imagen:hover {filter: opacity(.8);}
 
 .section {

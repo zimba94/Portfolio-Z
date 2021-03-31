@@ -1,4 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { DataService } from '../../services/data.service';
 import { Project, Skill } from '../../interfaces/interfaces';
 
@@ -15,9 +16,10 @@ export class HomeComponent implements OnInit {
   //public skillsSlideShow: Skill[]=[];
 
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit(): void {
+
     this.dataService.getProjects()
                         .subscribe(projects=>{
                           this.projects=projects;
@@ -27,6 +29,18 @@ export class HomeComponent implements OnInit {
                           this.skills=skills;
                           //this.skillsSlideShow=skills;
                         });
+    
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }else{
+          if(evt.url === "/#portfolio"){
+            console.log("scroll a portfolio");
+            window.scrollTo(420, 420)
+          }
+        }
+        
+    });
   }
 
   
