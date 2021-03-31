@@ -42,12 +42,19 @@ export class ContactComponent implements OnInit {
 
     const emailValues: Email = this.form.value;
     //ToDo: Post email, Service
-    this.email.sendEmail(emailValues).subscribe(result => {
+    this.email.sendEmail(emailValues).subscribe(
+    (result) => {
       this.snackBar.open('Message has been sent', undefined, {
-        duration: 2000,
+        duration: 2300,
       });
       this.form.reset();
-    });
+    },
+    (error) => {
+      this.snackBar.open("Error: message hasn't been sent", undefined, {
+        duration: 2300,
+      });
+    }
+    );
 
     
   }
