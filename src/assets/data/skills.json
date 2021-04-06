@@ -1,97 +1,97 @@
 [
     {
         "id": 1,
-        "image_path":"./assets/img/skills/html.png", 
+        "image_path":"./assets/img/skills/html.webp", 
         "name":"HTML",
         "level": "Advanced"
     },
     {
         "id": 2,
-        "image_path":"./assets/img/skills/css.png", 
+        "image_path":"./assets/img/skills/css.webp", 
         "name":"CSS",
         "level": "Medium"
     },
     {
         "id": 3,
-        "image_path":"./assets/img/skills/javascript.png", 
+        "image_path":"./assets/img/skills/javascript.webp", 
         "name":"JavaScript",
         "level": "Advanced"
     },
     {
         "id": 4,
-        "image_path":"./assets/img/skills/typescript.png", 
+        "image_path":"./assets/img/skills/typescript.webp", 
         "name":"TypeScript",
         "level": "Medium"
     },
     {
         "id": 5,
-        "image_path":"./assets/img/skills/angular.png", 
+        "image_path":"./assets/img/skills/angular.webp", 
         "name":"Angular",
         "level": "Medium"
     },
     {
         "id": 6,
-        "image_path":"./assets/img/skills/react.png", 
+        "image_path":"./assets/img/skills/react.webp", 
         "name":"React",
         "level": "Basic"
     },
     {
         "id": 7,
-        "image_path":"./assets/img/skills/php.png", 
+        "image_path":"./assets/img/skills/php.webp", 
         "name":"PHP",
         "level": "Medium"
     },
     {
         "id": 8,
-        "image_path":"./assets/img/skills/laravel.png", 
+        "image_path":"./assets/img/skills/laravel.webp", 
         "name":"Laravel",
         "level": "Basic"
     },
     {
         "id": 9,
-        "image_path":"./assets/img/skills/node.png", 
+        "image_path":"./assets/img/skills/node.webp", 
         "name":"Node",
         "level": "Basic"
     },
     {
         "id": 10,
-        "image_path":"./assets/img/skills/flutter.png", 
+        "image_path":"./assets/img/skills/flutter.webp", 
         "name":"Flutter",
         "level": "Medium"
     },
     {
         "id": 11,
-        "image_path":"./assets/img/skills/ionic.png", 
+        "image_path":"./assets/img/skills/ionic.webp", 
         "name":"Ionic",
         "level": "Basic"
     },
     {
         "id": 12,
-        "image_path":"./assets/img/skills/mysql.png", 
+        "image_path":"./assets/img/skills/mysql.webp", 
         "name":"MySQL",
         "level": "Medium"
     },
     {
         "id": 13,
-        "image_path":"./assets/img/skills/mongodb.png", 
+        "image_path":"./assets/img/skills/mongodb.webp", 
         "name":"MongoDB",
         "level": "Basic"
     },
     {
         "id": 14,
-        "image_path":"./assets/img/skills/wordpress.png", 
+        "image_path":"./assets/img/skills/wordpress.webp", 
         "name":"Wordpress",
         "level": "Advanced"
     },
     {
         "id": 15,
-        "image_path":"./assets/img/skills/git.png", 
+        "image_path":"./assets/img/skills/git.webp", 
         "name":"Git",
         "level": "Medium"
     },
     {
         "id": 16,
-        "image_path":"./assets/img/skills/bootstrap.png", 
+        "image_path":"./assets/img/skills/bootstrap.webp", 
         "name":"Bootstrap",
         "level": "Advanced"
     }

@@ -150,6 +150,30 @@ hr {
     margin-bottom: 0;
 }
 
+@media(max-width: 460px){
+
+    h1{
+        font-size: 2.3rem;
+    }
+
+    .header{
+        height: 40vh;
+    }
+    .header-overlay{
+        height: 40vh;
+    }
+    .header-video{
+        height: 40vh;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+    
+    .header-text p{
+        font-size: 20px;
+    }
+}
+
 @media(max-width: 960px){
     .content{
         padding: 0 3rem 0 3rem;

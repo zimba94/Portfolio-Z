@@ -18,15 +18,15 @@
                 
             </div>
 
-            <div class="row mt-5" *ngIf="skillSet.length > 0">
+            <div class="row mt-3" *ngIf="skillSet.length > 0">
                 <div class="col text-white">
-                    <p class="text-white ms-3 mb-3">Developed with:</p>
+                    <p class="text-white ms-3 mb-4">Developed with:</p>
                     <app-skills-slideshow [skills]="skillSet"></app-skills-slideshow>
                 </div>
             </div>            
     
-            <div class="row mt-5 mb-5"  style="margin-right: 10px !important;">
-                <div class="d-flex justify-content-end mb-5">
+            <div class="row mt-sm-3 mb-2"  style="margin-right: 10px !important;">
+                <div class="d-flex justify-content-end mb-4">
                     <a *ngIf="project.link != ''" class="btn btn-outline-success me-3" target="_blank" [href]="project.link">
                         View
                     </a>

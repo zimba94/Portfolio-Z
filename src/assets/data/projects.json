@@ -1,41 +1,41 @@
 [
     {
         "id": 1,
-        "image_path":"./assets/img/projects/sota/sota.png", 
+        "image_path":"./assets/img/projects/sota/sota.webp", 
         "name":"Sistema de Orientación de Trayectoria Académica", 
-        "description":"The Academic Trajectory Orientation System was a project developed for the Faculty of Engineering of the UAEMex with the aim of reviewing the subject proposals that students consider taking for their enrollment by their corresponding tutors.",
+        "description":"S.O.T.A was a project developed for the Faculty of Engineering of the UAEMex with the aim of reviewing the subject proposals that students consider taking for their enrollment by their corresponding tutors.",
         "skills": [1,2,3,7,12],
-        "images_paths": ["./assets/img/projects/sota/sota1.png","./assets/img/projects/sota/sota2.png","./assets/img/projects/sota/sota3.png"],
+        "images_paths": ["./assets/img/projects/sota/sota1.webp","./assets/img/projects/sota/sota2.webp","./assets/img/projects/sota/sota3.webp"],
         "link": "",
         "redirecto":"http://portfolio/sota"
     },
     {
         "id": 2,
-        "image_path":"./assets/img/projects/amasom/amasom.png", 
+        "image_path":"./assets/img/projects/amasom/amasom.webp", 
         "name":"Constructora AMASOM", 
         "description":"Presentation page of services and portfolio for the construction company AMASOM. Developed with the aim of creating the company's online presence.",
         "skills": [14,1,2,7],
-        "images_paths": ["./assets/img/projects/amasom/amasom1.PNG", "./assets/img/projects/amasom/amasom3.PNG", "./assets/img/projects/amasom/amasom2.PNG"],
+        "images_paths": ["./assets/img/projects/amasom/amasom1.webp", "./assets/img/projects/amasom/amasom3.webp", "./assets/img/projects/amasom/amasom2.webp"],
         "link": "https://amasom.com.mx/",
         "redirecto":"http://portfolio/amasom"
     },
     {
         "id": 3,
-        "image_path":"./assets/img/projects/gulaeats/gulaeats.png", 
+        "image_path":"./assets/img/projects/gulaeats/gulaeats.webp", 
         "name":"GulaEats", 
         "description":"Implementation, design and development of functionalities of the first version of the mobile applications GulaEats, GulaEats Repartidor and GulaEats Restaurant, as well as the deployment of the backend on the server. It highlights the development of the functionality of real-time dispatcher monitoring by means of sockets.",
         "skills": [10,8,7,12],
-        "images_paths": ["./assets/img/projects/gulaeats/gulaeats1.png","./assets/img/projects/gulaeats/gulaeats2.png","./assets/img/projects/gulaeats/gulaeats3.png","./assets/img/projects/gulaeats/gulaeats4.png"],
+        "images_paths": ["./assets/img/projects/gulaeats/gulaeats1.webp","./assets/img/projects/gulaeats/gulaeats2.webp","./assets/img/projects/gulaeats/gulaeats3.webp","./assets/img/projects/gulaeats/gulaeats4.webp"],
         "link": "https://play.google.com/store/search?q=gulaeats",
         "redirecto":"http://portfolio/gulaeats"
     },
     {
         "id": 4,
-        "image_path":"./assets/img/projects/dextro/dextro.png", 
+        "image_path":"./assets/img/projects/dextro/dextro.webp", 
         "name":"Grupo Dextro", 
         "description":"Creation and deployment of an executive presentation page for Grupo Dextro in order to strengthen its presence on the internet.",
         "skills": [14,1,2,16,7],
-        "images_paths": ["./assets/img/projects/dextro/dextro1.PNG","./assets/img/projects/dextro/dextro2.PNG","./assets/img/projects/dextro/dextro3.PNG"],
+        "images_paths": ["./assets/img/projects/dextro/dextro1.webp","./assets/img/projects/dextro/dextro2.webp","./assets/img/projects/dextro/dextro3.webp"],
         "link": "https://www.dextro.com.mx/",
         "redirecto":"http://portfolio/dextro"
     }
