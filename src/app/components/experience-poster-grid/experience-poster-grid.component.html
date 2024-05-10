@@ -34,6 +34,42 @@
     </div>
 </div>
 
+<div class="row justify-content-center">
+    <div class="col-md-3 col-sm-6 mb-5 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/be-jumper.webp" (click)="openWindowCustomClass(beJumper)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Be Jumper</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-5 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/tecnotrust.webp" (click)="openWindowCustomClass(tecnotrust)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Tecnotrust</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3 ms-3 me-3 animated fadeIn">
+        <img src="./assets/img/fmf.webp" (click)="openWindowCustomClass(fmf)" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div>
+            <h3>Federación Mexicana de Fútbol</h3>
+            <!-- <div class="row">
+                <div class="text-black">
+                    {{project.description}}
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
 <!-- FI UAEMex Modal -->
 
 <ng-template #fi let-modal>
@@ -118,7 +154,7 @@
     </div>
     <div class="modal-body">
         <div class="d-flex justify-content-center">
-            <strong>Oct/2020 - Present</strong>   
+            <strong>Oct/2020 - Abr/2021</strong>   
         </div>
         <hr>
         <div class="d-flex justify-content-center">
@@ -141,3 +177,104 @@
 
 
 
+<!-- Be Jumper Modal  -->
+
+<ng-template #beJumper let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Be Jumper Consultoría</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>May/2021 - Feb/2022</strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <ul>
+                <li>
+                    Development of systems for third parties with Angular, NodeJS, MariaDB, Firebase technologies.
+                </li>
+                <br>
+                <li>
+                    Survey and analysis of client requirements.
+                </li>
+                <br>
+                <li>
+                    <strong>Technologies used:</strong> Angular, NodeJS, MariaDB, Firebase  
+                </li>
+            </ul>
+        </div>   
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+
+
+<!-- Tecnotrust Modal  -->
+
+<ng-template #tecnotrust let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Tecnotrust</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>Marzo/2022 - Julio/2022</strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <ul>
+                <li>  
+                    Development of systems as a product of the company with the Angular, Ionic, and Firebase technologies.
+                </li>
+                <br>
+                <li>
+                    <strong>Technologies used:</strong> Angular, Ionic, Firebase, Docker and PostgreSQL   
+                </li>
+            </ul>
+        </div>   
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+
+
+<!-- FMF Modal  -->
+
+<ng-template #fmf let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Federación Mexicana de Fútbol</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center">
+            <strong>Ago/2022 - Present</strong>   
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <ul>
+                <li>         
+                    Development of internal systems mainly with Angular, NodeJS and SQL Server
+                </li>
+                <br>
+                <li>
+                    <strong>Technologies used:</strong> Angular, Angular Material, NodeJS, SQL Server and AWS
+                </li>
+            </ul>
+        </div>   
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger text-white" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>

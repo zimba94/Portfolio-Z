@@ -43,6 +43,17 @@ export class HomeComponent implements OnInit {
     });
   }
 
+
+      // {
+    //     "id": 4,
+    //     "image_path":"./assets/img/projects/dextro/dextro.webp", 
+    //     "name":"Grupo Dextro", 
+    //     "description":"Creation and deployment of an executive presentation page for Grupo Dextro in order to strengthen its presence on the internet.",
+    //     "skills": [14,1,2,16,7],
+    //     "images_paths": ["./assets/img/projects/dextro/dextro1.webp","./assets/img/projects/dextro/dextro2.webp","./assets/img/projects/dextro/dextro3.webp"],
+    //     "link": "https://www.dextro.com.mx/",
+    //     "redirecto":"http://portfolio/dextro"
+    // }
   
 
 }
